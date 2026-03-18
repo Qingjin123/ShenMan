@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0010FFA76217470472A53F82 /* FileSizeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C8C7081FB55C4AE68F0848 /* FileSizeFormatter.swift */; };
+		11FCB01F132EE38B0F6CC4FA /* AudioMetadataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26658FE1C6EF166D4475B70A /* AudioMetadataReader.swift */; };
+		1C8FAF15359DC1D2EFA77CC0 /* TranscribingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340846060EC6ADFBE9EC010 /* TranscribingView.swift */; };
+		1E2DA73D161FDB3DF0A10A89 /* SRTExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9F9641696FD56DCB60A82 /* SRTExporter.swift */; };
+		293A39FB469A7B298EFD8AEF /* Qwen3ASRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AEFB0DB9C93B4F90F99B30 /* Qwen3ASRModel.swift */; };
+		2D8FDDE4D9CDF7A74AAAF5CF /* ShenManApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE968390DE5EA020B261F9 /* ShenManApp.swift */; };
+		36B542DA1C0DB87C1C65FA9A /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBA31652B34DD46BE9D78AC /* TimeFormatter.swift */; };
+		40ADB06CB1FF0CDBA7A63873 /* ExportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A6CB0C5D47F3B20FE723B /* ExportOptions.swift */; };
+		420CD0D949A4E403C966ACA2 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593BB3923172D6E16B3C3EB /* ResultView.swift */; };
+		477912AE5237C86610DD8764 /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BCC4F7FF88171D984B3FE /* Exporter.swift */; };
+		4FCA54BEE4D85658CC8549BC /* TXTExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C91210BBBB4B57B2F880F9 /* TXTExporter.swift */; };
+		5630BDBB05BAEE4CB103A67A /* ASRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577C106A1AAB5BFFDD0AAB2 /* ASRModel.swift */; };
+		5EF4A38976A60958B3CF416C /* TimestampAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7808FF63A31FDC2826A9595 /* TimestampAggregator.swift */; };
+		61B5D4613BEACBFAE76E68E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EBC15B9B97F7F56C45AD8 /* ContentView.swift */; };
+		81CB6836F917AD6A20A5BB74 /* FileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06196BBF06F6880B3D075F27 /* FileRepository.swift */; };
+		84C412E72E4FBA430F22CEEC /* BatchProcessingQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D077CE7FBF25B9D88730410 /* BatchProcessingQueue.swift */; };
+		8BE433367CF826574B8D5E2C /* MarkdownExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1B302CEADCE1CA85FD329 /* MarkdownExporter.swift */; };
+		9912FA22E60A9EC06A44F926 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BE9F5A5833205D1D69E473 /* Constants.swift */; };
+		9A142E057DE8B07354B22761 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81F1FB1854402933EFE386 /* HomeView.swift */; };
+		9A59FB57C42128065CB0ADD5 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33670814F8A7C1EEF2A56DBE /* ModelManager.swift */; };
+		A1EBBEE2C4611CE47C1A1180 /* TranscriptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C21C0A437F0193A82FD3424 /* TranscriptionResult.swift */; };
+		A8121B2F51275FBDB68260E6 /* ModelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D250BE8F04718EF04BE7B0 /* ModelRegistry.swift */; };
+		AD93A9DF119E0F0816FBB633 /* MLXAudioSTT in Frameworks */ = {isa = PBXBuildFile; productRef = 5716165566391D2DEC0E4CC1 /* MLXAudioSTT */; };
+		B3C82470053FA054A8C5EE9B /* ModelManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D280CB37B6DAD264D7DF183C /* ModelManagerViewModel.swift */; };
+		B94FFF5A15A9BE84327833F3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018A790558683344D3705E3 /* AppState.swift */; };
+		C7BA2711CBFA073E96D28CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FCF500479CD54756D7D1F8 /* Assets.xcassets */; };
+		CA0EAC5CC54C3F1268CCFC4E /* AudioFileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDE31049F19A45D5990F71 /* AudioFileCard.swift */; };
+		CBFAA3964074215D81D59336 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E0DB236BF6583427B2316 /* SettingsRepository.swift */; };
+		CCE2CE821766255B6E036BB2 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0091DCE30D7EB3EB614442A9 /* ExportSheet.swift */; };
+		D22E4088E15A05A67A2CBA13 /* TranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BAD8AAED13E5C77A4BE0A5 /* TranscriptionService.swift */; };
+		D46AC032F2133EDF15DC7678 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C976CA0A0C35B8D5F4D04AF /* SettingsView.swift */; };
+		E9AC22928695F427CCB30B84 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A9A30BB80F8645DE2108F /* AppSettings.swift */; };
+		E9CE2624FA2CA17A0751F55D /* MLXAudioCore in Frameworks */ = {isa = PBXBuildFile; productRef = D927BAB2F33E18558CEAB43C /* MLXAudioCore */; };
+		EAA83FDCD7554F39618B5F55 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9095CAEBB0B7127D90379B4 /* Language.swift */; };
+		F1AF6FDA17AA0C238A308FCB /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47623DDFD9B1C2A6ED7B2E93 /* AudioFile.swift */; };
+		F3B15AF002308CEDB79BC5A2 /* ShenManStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA380D4EF545CE44131ADD /* ShenManStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091DCE30D7EB3EB614442A9 /* ExportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheet.swift; sourceTree = "<group>"; };
+		06196BBF06F6880B3D075F27 /* FileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRepository.swift; sourceTree = "<group>"; };
+		1340846060EC6ADFBE9EC010 /* TranscribingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribingView.swift; sourceTree = "<group>"; };
+		1C21C0A437F0193A82FD3424 /* TranscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionResult.swift; sourceTree = "<group>"; };
+		2018A790558683344D3705E3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2204BA8E3C5AFCC51EFA1D57 /* ShenMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShenMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26658FE1C6EF166D4475B70A /* AudioMetadataReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMetadataReader.swift; sourceTree = "<group>"; };
+		2A7EBC15B9B97F7F56C45AD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D077CE7FBF25B9D88730410 /* BatchProcessingQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchProcessingQueue.swift; sourceTree = "<group>"; };
+		33670814F8A7C1EEF2A56DBE /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		39AEFB0DB9C93B4F90F99B30 /* Qwen3ASRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qwen3ASRModel.swift; sourceTree = "<group>"; };
+		3B9E0DB236BF6583427B2316 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		3C976CA0A0C35B8D5F4D04AF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		47623DDFD9B1C2A6ED7B2E93 /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		4F6BCC4F7FF88171D984B3FE /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		5593BB3923172D6E16B3C3EB /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		69FCF500479CD54756D7D1F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70E1B302CEADCE1CA85FD329 /* MarkdownExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExporter.swift; sourceTree = "<group>"; };
+		88C91210BBBB4B57B2F880F9 /* TXTExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTExporter.swift; sourceTree = "<group>"; };
+		88EA380D4EF545CE44131ADD /* ShenManStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShenManStyle.swift; sourceTree = "<group>"; };
+		8C81F1FB1854402933EFE386 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9577C106A1AAB5BFFDD0AAB2 /* ASRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASRModel.swift; sourceTree = "<group>"; };
+		9EAE968390DE5EA020B261F9 /* ShenManApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShenManApp.swift; sourceTree = "<group>"; };
+		A1C8C7081FB55C4AE68F0848 /* FileSizeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSizeFormatter.swift; sourceTree = "<group>"; };
+		A2D250BE8F04718EF04BE7B0 /* ModelRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRegistry.swift; sourceTree = "<group>"; };
+		B59A6CB0C5D47F3B20FE723B /* ExportOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportOptions.swift; sourceTree = "<group>"; };
+		B7808FF63A31FDC2826A9595 /* TimestampAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampAggregator.swift; sourceTree = "<group>"; };
+		BDD9F9641696FD56DCB60A82 /* SRTExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTExporter.swift; sourceTree = "<group>"; };
+		C3BE9F5A5833205D1D69E473 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9095CAEBB0B7127D90379B4 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		CCBA31652B34DD46BE9D78AC /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		D280CB37B6DAD264D7DF183C /* ModelManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerViewModel.swift; sourceTree = "<group>"; };
+		DF3A9A30BB80F8645DE2108F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		E7BA2BA23A0DC5044C96B998 /* ShenMan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShenMan.entitlements; sourceTree = "<group>"; };
+		E88CA0A148EC45AE0549C00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F4EDE31049F19A45D5990F71 /* AudioFileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileCard.swift; sourceTree = "<group>"; };
+		F8BAD8AAED13E5C77A4BE0A5 /* TranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C02D39C0720F77E73CDDBF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD93A9DF119E0F0816FBB633 /* MLXAudioSTT in Frameworks */,
+				E9CE2624FA2CA17A0751F55D /* MLXAudioCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0858DD9B59FCA25EEB4B7C7A = {
+			isa = PBXGroup;
+			children = (
+				C470883D01E1F9AF46B050C0 /* ShenMan */,
+				43C9E3DFD173C7EF30CA95F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43C9E3DFD173C7EF30CA95F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2204BA8E3C5AFCC51EFA1D57 /* ShenMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45A2C5A41FF7F34EB8994027 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2018A790558683344D3705E3 /* AppState.swift */,
+				D280CB37B6DAD264D7DF183C /* ModelManagerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6219F1D9435689409963123E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C1318E178BB615B759658C8 /* {Components} */,
+				A5900AED4FE921F30F142FBC /* Components */,
+				2A7EBC15B9B97F7F56C45AD8 /* ContentView.swift */,
+				8C81F1FB1854402933EFE386 /* HomeView.swift */,
+				5593BB3923172D6E16B3C3EB /* ResultView.swift */,
+				3C976CA0A0C35B8D5F4D04AF /* SettingsView.swift */,
+				1340846060EC6ADFBE9EC010 /* TranscribingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66C723F379D9FC62970A1873 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33670814F8A7C1EEF2A56DBE /* ModelManager.swift */,
+				A2D250BE8F04718EF04BE7B0 /* ModelRegistry.swift */,
+				F8BAD8AAED13E5C77A4BE0A5 /* TranscriptionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8279E831E226C6CA0C987FD3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				06196BBF06F6880B3D075F27 /* FileRepository.swift */,
+				3B9E0DB236BF6583427B2316 /* SettingsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		917A20023FB6DE851FBBD2EF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				26658FE1C6EF166D4475B70A /* AudioMetadataReader.swift */,
+				C3BE9F5A5833205D1D69E473 /* Constants.swift */,
+				A1C8C7081FB55C4AE68F0848 /* FileSizeFormatter.swift */,
+				88EA380D4EF545CE44131ADD /* ShenManStyle.swift */,
+				CCBA31652B34DD46BE9D78AC /* TimeFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9C1318E178BB615B759658C8 /* {Components} */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "{Components}";
+			sourceTree = "<group>";
+		};
+		A5900AED4FE921F30F142FBC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDE31049F19A45D5990F71 /* AudioFileCard.swift */,
+				0091DCE30D7EB3EB614442A9 /* ExportSheet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C470883D01E1F9AF46B050C0 /* ShenMan */ = {
+			isa = PBXGroup;
+			children = (
+				C6DC3E01F16F7FA126B8F274 /* Exporters */,
+				C807ADB05C82EBCB732273B4 /* Models */,
+				C545DFE3B95B0264ADD393E9 /* Processors */,
+				8279E831E226C6CA0C987FD3 /* Repositories */,
+				CABDA95840D10925F66E8C0B /* Resources */,
+				66C723F379D9FC62970A1873 /* Services */,
+				917A20023FB6DE851FBBD2EF /* Utilities */,
+				45A2C5A41FF7F34EB8994027 /* ViewModels */,
+				6219F1D9435689409963123E /* Views */,
+				E88CA0A148EC45AE0549C00A /* Info.plist */,
+				E7BA2BA23A0DC5044C96B998 /* ShenMan.entitlements */,
+				9EAE968390DE5EA020B261F9 /* ShenManApp.swift */,
+			);
+			path = ShenMan;
+			sourceTree = "<group>";
+		};
+		C545DFE3B95B0264ADD393E9 /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				B7808FF63A31FDC2826A9595 /* TimestampAggregator.swift */,
+			);
+			path = Processors;
+			sourceTree = "<group>";
+		};
+		C6DC3E01F16F7FA126B8F274 /* Exporters */ = {
+			isa = PBXGroup;
+			children = (
+				4F6BCC4F7FF88171D984B3FE /* Exporter.swift */,
+				70E1B302CEADCE1CA85FD329 /* MarkdownExporter.swift */,
+				BDD9F9641696FD56DCB60A82 /* SRTExporter.swift */,
+				88C91210BBBB4B57B2F880F9 /* TXTExporter.swift */,
+			);
+			path = Exporters;
+			sourceTree = "<group>";
+		};
+		C807ADB05C82EBCB732273B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D34A5B08B57B2D88873A9B1B /* ASR */,
+				DF3A9A30BB80F8645DE2108F /* AppSettings.swift */,
+				47623DDFD9B1C2A6ED7B2E93 /* AudioFile.swift */,
+				2D077CE7FBF25B9D88730410 /* BatchProcessingQueue.swift */,
+				B59A6CB0C5D47F3B20FE723B /* ExportOptions.swift */,
+				C9095CAEBB0B7127D90379B4 /* Language.swift */,
+				1C21C0A437F0193A82FD3424 /* TranscriptionResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CABDA95840D10925F66E8C0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69FCF500479CD54756D7D1F8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D34A5B08B57B2D88873A9B1B /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				9577C106A1AAB5BFFDD0AAB2 /* ASRModel.swift */,
+				39AEFB0DB9C93B4F90F99B30 /* Qwen3ASRModel.swift */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E38990EFD6E897AD0B009A01 /* ShenMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73026782D2DE7F1E22F6D8C9 /* Build configuration list for PBXNativeTarget "ShenMan" */;
+			buildPhases = (
+				DCD8065E5640EDA6ECAB1156 /* Sources */,
+				4DDBC9773340C7A7DE32A843 /* Resources */,
+				2C02D39C0720F77E73CDDBF6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShenMan;
+			packageProductDependencies = (
+				5716165566391D2DEC0E4CC1 /* MLXAudioSTT */,
+				D927BAB2F33E18558CEAB43C /* MLXAudioCore */,
+			);
+			productName = ShenMan;
+			productReference = 2204BA8E3C5AFCC51EFA1D57 /* ShenMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		070E1364FFEEA421C4DE874E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E38990EFD6E897AD0B009A01 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C31A3C0D0DEAC13CE560F2B3 /* Build configuration list for PBXProject "ShenMan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0858DD9B59FCA25EEB4B7C7A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B0099E93597BF80039263B0 /* XCRemoteSwiftPackageReference "mlx-audio-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 43C9E3DFD173C7EF30CA95F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E38990EFD6E897AD0B009A01 /* ShenMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDBC9773340C7A7DE32A843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BA2711CBFA073E96D28CD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD8065E5640EDA6ECAB1156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5630BDBB05BAEE4CB103A67A /* ASRModel.swift in Sources */,
+				E9AC22928695F427CCB30B84 /* AppSettings.swift in Sources */,
+				B94FFF5A15A9BE84327833F3 /* AppState.swift in Sources */,
+				F1AF6FDA17AA0C238A308FCB /* AudioFile.swift in Sources */,
+				CA0EAC5CC54C3F1268CCFC4E /* AudioFileCard.swift in Sources */,
+				11FCB01F132EE38B0F6CC4FA /* AudioMetadataReader.swift in Sources */,
+				84C412E72E4FBA430F22CEEC /* BatchProcessingQueue.swift in Sources */,
+				9912FA22E60A9EC06A44F926 /* Constants.swift in Sources */,
+				61B5D4613BEACBFAE76E68E6 /* ContentView.swift in Sources */,
+				40ADB06CB1FF0CDBA7A63873 /* ExportOptions.swift in Sources */,
+				CCE2CE821766255B6E036BB2 /* ExportSheet.swift in Sources */,
+				477912AE5237C86610DD8764 /* Exporter.swift in Sources */,
+				81CB6836F917AD6A20A5BB74 /* FileRepository.swift in Sources */,
+				0010FFA76217470472A53F82 /* FileSizeFormatter.swift in Sources */,
+				9A142E057DE8B07354B22761 /* HomeView.swift in Sources */,
+				EAA83FDCD7554F39618B5F55 /* Language.swift in Sources */,
+				8BE433367CF826574B8D5E2C /* MarkdownExporter.swift in Sources */,
+				9A59FB57C42128065CB0ADD5 /* ModelManager.swift in Sources */,
+				B3C82470053FA054A8C5EE9B /* ModelManagerViewModel.swift in Sources */,
+				A8121B2F51275FBDB68260E6 /* ModelRegistry.swift in Sources */,
+				293A39FB469A7B298EFD8AEF /* Qwen3ASRModel.swift in Sources */,
+				420CD0D949A4E403C966ACA2 /* ResultView.swift in Sources */,
+				1E2DA73D161FDB3DF0A10A89 /* SRTExporter.swift in Sources */,
+				CBFAA3964074215D81D59336 /* SettingsRepository.swift in Sources */,
+				D46AC032F2133EDF15DC7678 /* SettingsView.swift in Sources */,
+				2D8FDDE4D9CDF7A74AAAF5CF /* ShenManApp.swift in Sources */,
+				F3B15AF002308CEDB79BC5A2 /* ShenManStyle.swift in Sources */,
+				4FCA54BEE4D85658CC8549BC /* TXTExporter.swift in Sources */,
+				36B542DA1C0DB87C1C65FA9A /* TimeFormatter.swift in Sources */,
+				5EF4A38976A60958B3CF416C /* TimestampAggregator.swift in Sources */,
+				1C8FAF15359DC1D2EFA77CC0 /* TranscribingView.swift in Sources */,
+				A1EBBEE2C4611CE47C1A1180 /* TranscriptionResult.swift in Sources */,
+				D22E4088E15A05A67A2CBA13 /* TranscriptionService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B08BB9E43F77A2A4DA399C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "声声慢";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		9481E1B665CD23F666304B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShenMan/ShenMan.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShenMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenman.app;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F7DC3F9055DC76C514C982E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "声声慢";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F847E21A1DE5089F79D26B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShenMan/ShenMan.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ShenMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenman.app;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73026782D2DE7F1E22F6D8C9 /* Build configuration list for PBXNativeTarget "ShenMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9481E1B665CD23F666304B2C /* Debug */,
+				F847E21A1DE5089F79D26B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C31A3C0D0DEAC13CE560F2B3 /* Build configuration list for PBXProject "ShenMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B08BB9E43F77A2A4DA399C2 /* Debug */,
+				F7DC3F9055DC76C514C982E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B0099E93597BF80039263B0 /* XCRemoteSwiftPackageReference "mlx-audio-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Blaizzy/mlx-audio-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5716165566391D2DEC0E4CC1 /* MLXAudioSTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B0099E93597BF80039263B0 /* XCRemoteSwiftPackageReference "mlx-audio-swift" */;
+			productName = MLXAudioSTT;
+		};
+		D927BAB2F33E18558CEAB43C /* MLXAudioCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B0099E93597BF80039263B0 /* XCRemoteSwiftPackageReference "mlx-audio-swift" */;
+			productName = MLXAudioCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 070E1364FFEEA421C4DE874E /* Project object */;
+}

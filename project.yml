@@ -1,0 +1,53 @@
+name: ShenMan
+options:
+  bundleIdPrefix: com.shenman
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+settings:
+  base:
+    PRODUCT_NAME: 声声慢
+    MARKETING_VERSION: 0.1.0
+    CURRENT_PROJECT_VERSION: 1
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_HARDENED_RUNTIME: YES
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+
+packages:
+  MLXAudio:
+    url: https://github.com/Blaizzy/mlx-audio-swift.git
+    branch: main
+
+targets:
+  ShenMan:
+    type: application
+    platform: macOS
+    sources:
+      - path: ShenMan
+        excludes:
+          - "**/.DS_Store"
+    dependencies:
+      - package: MLXAudio
+        product: MLXAudioSTT
+      - package: MLXAudio
+        product: MLXAudioCore
+    settings:
+      base:
+        INFOPLIST_FILE: ShenMan/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ShenMan/ShenMan.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.shenman.app
+        COMBINE_HIDPI_IMAGES: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+    entitlements:
+      path: ShenMan/ShenMan.entitlements
+      properties:
+        com.apple.security.files.user-selected.read-only: true
+        com.apple.security.files.downloads.read-write: true
+        com.apple.security.network.client: true
+        com.apple.security.network.server: false
