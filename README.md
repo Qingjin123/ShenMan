@@ -6,12 +6,6 @@
 
 一款基于 Qwen3-ASR 的 macOS 语音转文字工具
 
-[![Platform](https://img.shields.io/badge/platform-macOS%2013.0+-blue.svg)](https://developer.apple.com/macos/)
-[![Swift](https://img.shields.io/badge/Swift-5.9+-orange.svg)](https://swift.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
-</div>
-
 ---
 
 ## 📖 目录
@@ -245,12 +239,6 @@ sudo xattr -cr /Applications/ShenMan.app
 ### Q: 为什么只支持 Apple Silicon？
 A: 本项目使用 MLX 框架进行模型推理，MLX 是 Apple 专为 Apple Silicon 设计的框架，不支持 Intel Mac。
 
-### Q: 转录准确率如何？
-A: 在普通话场景下，WER（词错误率）约 8%；在粤语场景下，WER 约 15%。实际效果取决于音频质量和说话人发音。
-
-### Q: 处理速度如何？
-A: M1/M2 芯片上，RTF（实时因子）约 0.15，即 1 分钟音频处理时间约 9 秒。
-
 ### Q: 应用提示"已损坏"怎么办？
 A: 这是由于应用未签名导致的。执行以下命令即可：
 ```bash
@@ -262,8 +250,6 @@ A: 在终端运行以下命令查看日志：
 ```bash
 log stream --predicate 'process == "ShenMan"' --info
 ```
-
-更多问题请查看：[docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
 
 ---
 
@@ -329,7 +315,7 @@ open ShenMan.xcodeproj
 
 <div align="center">
 
-**声声慢** © 2026 ShenMan Team
+**声声慢** © 2026 kappa
 
 Made with ❤️ for macOS
 

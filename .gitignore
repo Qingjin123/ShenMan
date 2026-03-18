@@ -141,3 +141,4 @@ docs/.doctrees/
 test.mp3
 test_*.mp3
 test-img/
+.docs/
